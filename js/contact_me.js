@@ -18,7 +18,7 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "././mail/contact_me.php",
+                url: "../mail/contact_me.php",
                 type: "POST",
                 data: {
                     name: name,
@@ -29,6 +29,7 @@ $(function() {
                 cache: false,
                 success: function() {
                     // Success message
+                    alert('foobar');
                     $('#success').html("<div class='alert alert-success'>");
                     $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
@@ -42,6 +43,7 @@ $(function() {
                 },
                 error: function() {
                     // Fail message
+                    alert('helo');
                     $('#success').html("<div class='alert alert-danger'>");
                     $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
