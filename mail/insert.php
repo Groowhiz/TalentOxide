@@ -16,9 +16,9 @@ $mobile = $_POST['phone'];
 $message = $_POST['message'];
 	
 $servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "huf";
+$username = "to2";
+$password = "to2";
+$dbname = "talentoxide";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -27,7 +27,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
-$sql = "INSERT INTO users(name, mobile, email, message)
+$sql = "INSERT INTO users (name, mobile_number, email, message)
 VALUES ($name, $mobile, $email, $message)";
 
 if ($conn->query($sql) === TRUE) {
