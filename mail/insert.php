@@ -28,7 +28,7 @@ if ($conn->connect_error) {
 } 
 
 $sql = "INSERT INTO users (name, mobile_number, email, message)
-VALUES ($name, $mobile, $email, $message)";
+VALUES ('$name', '$mobile', '$email', '$message')";
 
 if ($conn->query($sql) === TRUE) {
     echo "New record created successfully";
