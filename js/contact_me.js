@@ -29,7 +29,6 @@ $(function() {
                 cache: false,
                 success: function() {
                     // Success message
-                    alert('foobar');
                     $('#success').html("<div class='alert alert-success'>");
                     $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
@@ -43,7 +42,6 @@ $(function() {
                 },
                 error: function() {
                     // Fail message
-                    alert('helo');
                     $('#success').html("<div class='alert alert-danger'>");
                     $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
