@@ -75,13 +75,11 @@
                         <a class="page-scroll" href="#portfolio">Projects</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">How it works</a>
-                    </li>
-                    <li>
                         <a class="page-scroll" href="#talents">Talents</a>
                     </li>
+                    
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a href="#SignUp_Modal" id="SignUp" data-target="#SignUp_Modal" data-toggle="modal">SignUp</a>
                     </li>
                 </ul>
             </div>
@@ -89,14 +87,15 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-
-    <!-- Header -->
+    
+    
+       <!-- Header -->
     <header>
         <div class="container">
             <div class="intro-text">
                 <div class="intro-lead-in">Launching Soon Talent Oxide TO<sub>2</sub></div>
                 <div class="intro-heading">If you can dream it, you can do it ! </div>
-                <a href="#about" class="page-scroll btn btn-xl">How it works</a>
+               <a href="#about" class="page-scroll btn btn-xl">How it works</a>
             </div>
         </div>
     </header>
@@ -146,6 +145,7 @@
             </div>
         </div>
     </section>
+<!-------------------------------------------- projects section ------------------------------->
 
     <!-- Projects Grid Section -->
     <section id="portfolio" class="bg-light-gray">
@@ -637,7 +637,10 @@
     </footer>
 
     <!-- Portfolio Modals------------------pop overs for links------------------------------------ -->
-    <!-- Use the modals below to showcase details about your portfolio projects! -->
+    
+    
+    
+    <!------------------- Use the modals below to showcase details about your portfolio projects! -------------------------->
 
     <!-- Portfolio Modal 1 -->
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
@@ -849,10 +852,146 @@
             </div>
         </div>
     </div>
+    
+    <!---------------- Sign up modal ---------------------->
+    <div class="modal fade" id="SignUp_Modal" tabindex="-1" role="dialog"
+        aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <button type="button" class="close"
+                        data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                        <span class="sr-only">Close</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        Register
+                    </h4>
+                </div>
+                
+                <!-- Modal Body -->
+                <div class="modal-body">
+                    
+                    <form class="form-horizontal" role="form">
+                        
+                        <div class="form-group">
+                            <label  class="col-sm-2 control-label"
+                                for="fullname">Name</label>
+                            <div class="col-sm-10">
+                                <input type="fullname" class="form-control"
+                                id="fullname" placeholder="Full Name"/>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label"
+                                for="email" >Email</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control"
+                                id="email" placeholder="Email-Id"/>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label"
+                                for="age" >Age</label>
+                            <div class="col-sm-10">
+                                <input type="age" class="form-control"
+                                id="age" placeholder="Age"/>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        
+                        <div class ="row">
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label"or="gender" >&nbsp;&nbsp;Gender</label>
+                                
+                                <div class="col-md-4">
+                                    <label class="radio-inline" class="col-sm-10" >
+                                        <input type="radio" name="sex" id="gender" value="1" />
+                                        Male
+                                    </label>
+                                </div>
+                                
+                                <div class="col-md-4">
+                                    <label class="radio-inline" class="col-sm-10" >
+                                        
+                                        <input type="radio" name="sex" id="gender" value="0" />
+                                        Female
+                                    </label>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        <div class ="row">
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label"or="is_artist" >&nbsp;&nbsp;Are you talented
+                                </label>
+                                
+                                <div class="col-md-4">
+                                    <label class="radio-inline" class="col-sm-10" >
+                                        <input type="radio" name="talent" id="talent" value="1" />Yes
+                                    </label>
+                                </div>
+                                
+                                <div class="col-md-4">
+                                    <label class="radio-inline" class="col-sm-10" >
+                                        
+                                        <input type="radio" name="talent" id="talent" value="0" />No
+                                        
+                                    </label>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label"
+                                for="age" >Talent</label>
+                            <div class="col-sm-10">
+                                <input type="talent" class="form-control"
+                                id="talent" placeholder="Talent"/>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <!-- Modal Footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default"
+                                data-dismiss="modal">
+                                Register
+                            </button>
+                            
+                        </div>
+                        </div>
+            </div>
+        </div>
+        
+        
+        
+        <!----------------End Sign up modal ---------------------->
+        
+
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
-
+    
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
@@ -864,6 +1003,7 @@
     <!-- Contact Form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
     <script src="js/contact_me.js"></script>
+    <script src="js/registered_users.js"><>
 
     <!-- Custom Theme JavaScript -->
     <script src="js/agency.js"></script>
